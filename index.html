@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapin + Salesforce | One connected view of every customer</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar" id="top">
+  <a class="brand" href="#1" aria-label="Salesforce and Chapin, back to the cover">
+    <img class="sf-logo" src="assets/salesforce-logo.png" alt="Salesforce" width="68" height="48">
+    <span class="plus">+</span>
+    <img class="chapin-logo" src="assets/chapin-logo.png" alt="Chapin" width="120" height="46">
+  </a>
+  <nav class="jump" id="pnav" aria-label="Sections"></nav>
+  <div class="pager-ctl" aria-label="Page navigation">
+    <button type="button" class="pg-btn" id="pg-prev" aria-label="Previous page">&larr; Back</button>
+    <span class="pg-count" id="pg-count" aria-live="polite"></span>
+    <button type="button" class="pg-btn pri" id="pg-next" aria-label="Next page">Next &rarr;</button>
+  </div>
+  <button class="ask-btn" id="open-ask" type="button"><span class="spark" aria-hidden="true"></span>Ask</button>
+</header>
+
+<section class="hero" id="cover">
+  <div class="hero-inner">
+    <p class="eyebrow">Salesforce Customer 360 for Chapin</p>
+    <h1>One 360&deg; view of every customer.<br>Built for manufacturers. Ready to scale with Chapin.</h1>
+    <p class="lede">Manufacturing Cloud runs on the Salesforce Platform, the #1 AI CRM, so sales, service and marketing share one trusted customer record connected to SyteLine. Agentforce AI and Slack are built in, and every next step, from rebates to partner portals, plugs into the same platform as Chapin grows.</p>
+    <ul class="values" aria-label="What Salesforce brings">
+      <li><b>One 360&deg; view</b><span>Accounts, agreements, orders, cases and campaigns on one record, synced with SyteLine</span></li>
+      <li><b>Built for manufacturers</b><span>Sales agreements, account forecasting and warranty out of the box</span></li>
+      <li><b>Easy to use</b><span>Role-based home pages, plain-English answers, Outlook and RingCentral connected</span></li>
+      <li><b>Scales with you</b><span>New features 3x a year; Phase 2 and new businesses join the same platform</span></li>
+    </ul>
+
+    <nav class="hnav" aria-label="Jump to a section">
+      <p class="hnav-h">Where would you like to start?</p>
+      <div class="hnav-grid">
+        <a class="hcard primary" href="#journey"><em class="hey">Journey</em><b>The journey</b><span>Follow one customer through six chapters, step by step</span>
+          <span class="hchips" id="hero-chapters"></span></a>
+        <a class="hcard" href="#why"><em class="hey">Why</em><b>Why Salesforce</b><span>Customer 360 for manufacturers, and the results</span></a>
+        <a class="hcard" href="#vision"><em class="hey">Vision</em><b>The vision</b><span>Chapin's systems today, and with Salesforce</span></a>
+        <a class="hcard" href="#simple"><em class="hey">Ease</em><b>Simple by design</b><span>Why it's easy for every team to use</span></a>
+        <a class="hcard" href="#journey" data-chapter="premier"><em class="hey">Success</em><b>Premier Success</b><span>Salesforce experts beside you after go-live</span></a>
+        <a class="hcard" href="#plan"><em class="hey">Plan</em><b>The plan</b><span>Phase 1, Phase 2 and the 13-week build</span></a>
+        <a class="hcard" href="#deeper"><em class="hey">Go deeper</em><b>FAQs &amp; platform library</b><span>Answers to common questions and 100+ slides</span></a>
+      </div>
+      <a class="short" href="#summary">Short on time? Start with the executive summary &rarr;</a>
+    </nav>
+
+    <form class="hero-ask" id="hero-ask" autocomplete="off">
+      <span class="spark" aria-hidden="true"></span>
+      <input id="hero-q" type="text" placeholder="Or ask anything: forecasting, RingCentral, trade shows, ROI..." aria-label="Ask a question">
+      <button type="submit">Ask</button>
+    </form>
+    <div class="suggest" id="hero-suggest" aria-label="Suggested questions"></div>
+    <p class="cover-note">Please stop us whenever we've got something wrong. Your corrections are the most useful part of this conversation.<br><span>Prepared for Chapin by the Salesforce account team</span></p>
+  </div>
+</section>
+
+<!-- Executive summary -->
+<section id="summary" class="summary">
+  <div class="section">
+    <p class="kicker">Executive summary</p>
+    <h2>The whole story on one page</h2>
+    <p class="sub">For anyone who needs the short version.</p>
+    <div class="sgrid" id="sgrid"></div>
+  </div>
+</section>
+
+<!-- 1. Why Salesforce -->
+<section id="why" class="why reveal">
+  <div class="section">
+    <p class="kicker" id="why-eyebrow"></p>
+    <h2 id="why-headline"></h2>
+    <div class="why-grid">
+      <div class="why-text"><div id="why-text"></div><p class="why-closer" id="why-pull"></p></div>
+      <div class="mfg-square" id="mfg-square"></div>
+    </div>
+    <div class="pillars" id="pillars"></div>
+    <h3 class="proof-h">What manufacturers have achieved on Salesforce</h3>
+    <div class="pcards" id="proof-cards"></div>
+    <button class="more-btn" id="proof-more" type="button">See all results</button>
+    <p class="note" id="proof-note"></p>
+  </div>
+</section>
+
+<!-- 2. The vision -->
+<section id="vision" class="vision reveal">
+  <div class="section">
+    <p class="kicker">The vision</p>
+    <h2>From disconnected tools to one connected platform</h2>
+    <p class="sub">What Chapin runs on today, and how it fits together with Salesforce. SyteLine stays the system of record; everything else meets on one customer record.</p>
+    <div class="vgrid" id="vgrid"></div>
+  </div>
+</section>
+
+<!-- 3. The journey -->
+<section id="journey" class="section">
+  <p class="kicker">The journey</p>
+  <h2>Follow one customer through Chapin</h2>
+  <p class="sub" id="persona"></p>
+  <ol class="jmap" id="jmap" role="tablist" aria-label="Journey chapters"></ol>
+  <div class="chapter" id="chapter" role="tabpanel" tabindex="-1"></div>
+</section>
+
+<!-- 3. Simple by design -->
+<section id="simple" class="simple reveal">
+  <div class="section">
+    <p class="kicker">Simple by design</p>
+    <h2 id="simple-h"></h2>
+    <p class="sub" id="simple-sub"></p>
+    <figure class="simple-quote" id="simple-quote"></figure>
+    <div class="scards" id="simple-cards"></div>
+    <div class="tasks">
+      <h3>Everyday tasks, one step each</h3>
+      <div class="trow" id="simple-tasks"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 4. The 13-week plan -->
+<section id="plan" class="section reveal">
+  <p class="kicker">The plan</p>
+  <h2>From signature to go-live in about 13 weeks</h2>
+  <p class="sub">Our recommendation from the readback, and how we get there together.</p>
+  <div class="phases" id="phases"></div>
+  <h3 class="next-h">How we got here</h3>
+  <ol class="path" id="path"></ol>
+  <h3 class="next-h">The build: about 13 weeks with Acquis, Premier Success alongside</h3>
+  <div class="gantt" id="gantt"></div>
+  <p class="gnote" id="gantt-note"></p>
+  <h3 class="next-h">What happens next</h3>
+  <ol class="next" id="next-list"></ol>
+</section>
+
+<!-- 5. Go deeper -->
+<section id="deeper" class="section reveal">
+  <p class="kicker">Go deeper</p>
+  <h2>Explore the platform behind the journey</h2>
+  <div class="seg" role="tablist" aria-label="Go deeper">
+    <button class="segb on" data-pane="faq" role="tab" aria-selected="true">FAQs</button>
+    <button class="segb" data-pane="slides" role="tab" aria-selected="false">Platform library</button>
+  </div>
+  <div class="pane" id="pane-slides" hidden>
+    <div class="lib-bar">
+      <div class="filters" id="slide-filters" role="group" aria-label="Filter slides"></div>
+      <input class="faq-search lib-search" id="lib-search" type="search" placeholder="Search slides: warranty, rebates, Slackbot..." aria-label="Search slides">
+    </div>
+    <div class="slide-grid" id="slide-grid"></div>
+  </div>
+  <div class="pane" id="pane-faq">
+    <input class="faq-search" id="faq-search" type="search" placeholder="Search FAQs: forecasting, Slack, MuleSoft, Premier..." aria-label="Search FAQs">
+    <div class="faq" id="faq-list"></div>
+  </div>
+</section>
+
+<nav class="pager-bottom" id="pager-bottom" aria-label="Previous and next page"></nav>
+
+<footer>
+  <p>Prepared by your Salesforce account team for Chapin. Screens are illustrative, and customer names in them are fictional. Scope, timing and capabilities are confirmed in the final statement of work. Customer results are as reported by Salesforce and its customers. Product names and marks belong to their respective owners.</p>
+</footer>
+
+<!-- Slide viewer -->
+<div class="sv-scrim" id="sv-scrim" hidden></div>
+<div class="sviewer" id="sviewer" role="dialog" aria-modal="true" aria-label="Slide detail" hidden>
+  <button class="sv-x" id="sv-close" type="button" aria-label="Close">&times;</button>
+  <button class="sv-nav prev" id="sv-prev" type="button" aria-label="Previous slide">&lsaquo;</button>
+  <button class="sv-nav next" id="sv-next" type="button" aria-label="Next slide">&rsaquo;</button>
+  <div class="sv-img"><img id="sv-img" alt=""></div>
+  <div class="sv-body" id="sv-body"></div>
+</div>
+
+<!-- Ask drawer -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="false" aria-label="Ask about your Chapin journey" hidden>
+  <header class="drawer-head">
+    <div>
+      <div class="d-title"><span class="spark" aria-hidden="true"></span> Ask about your journey</div>
+      <div class="d-sub">Answers from Chapin program materials, salesforce.com and the platform overview.</div>
+    </div>
+    <button class="x" id="close-ask" type="button" aria-label="Close">&times;</button>
+  </header>
+  <div class="msgs" id="msgs" aria-live="polite"></div>
+  <div class="d-suggest" id="d-suggest"></div>
+  <form class="d-form" id="d-form" autocomplete="off">
+    <input id="d-q" type="text" placeholder="Ask a question..." aria-label="Your question">
+    <button type="submit" aria-label="Send">&#10148;</button>
+  </form>
+</aside>
+
+<script src="data.js"></script>
+<script src="why.js"></script>
+<script src="faqs.js"></script>
+<script src="library.js"></script>
+<script src="slides.js"></script>
+<script src="mocks.js"></script>
+<script src="render.js"></script>
+<script src="agent.js"></script>
+<script src="pager.js"></script>
+</body>
+</html>
